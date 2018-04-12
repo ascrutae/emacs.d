@@ -10,13 +10,17 @@
 ;; init elpa
 ;;
 (require 'init-melpa)
-(setq package-list '(org helm use-package spacemacs-theme))
+(setq package-list '(org helm use-package spacemacs-theme auto-complete ivy counsel))
+;; DONOT generate back up files
 (setq make-backup-files nil)
 
 (require 'init-packages)
-(require 'init-helm)
+;;(require 'init-helm)
+(require 'init-ivy)
 (require 'init-theme)
-
+(require 'init-electric-pair)
+(require 'init-autocomplete)
+(require 'init-org)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
