@@ -1,5 +1,10 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
+(setq ivy-height 10)
+(setq ivy-count-format "")
+(setq ivy-initial-inputs-alist nil)
+(setq ivy-re-builders-alist
+        '((t . ivy--regex-ignore-order)))
 (setq enable-recursive-minibuffers t)
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)

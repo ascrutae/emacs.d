@@ -5,4 +5,5 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+(auto-package-update-maybe)
 (provide 'init-packages)
