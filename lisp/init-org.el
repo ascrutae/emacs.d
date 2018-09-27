@@ -7,7 +7,7 @@
 (setq org-log-state-notes-insert-after-drawers nil)
 ;;(setq org-default-notes-file (concat org-directory "plain-life.org"))
 ;;(setq org-agenda-files ((concat org-directory "plain-life.org")))
-(setq org-agenda-files (file-expand-wildcards (concat org-directory "plain-life.org")))
+;;(setq org-agenda-files (file-expand-wildcards (concat org-directory "plain-life.org")))
 (setq org-refile-use-outline-path t)
 (setq org-outline-path-complete-in-steps nil)
 ;; todo key words
@@ -19,13 +19,13 @@
               (sequence "WAITING(w@/!)" "DELEGATED(e!)" "HOLD(h)" "|" "CANCELLED(c@/!)")))
       org-todo-repeat-to-state "NEXT")
 ;; capture templates
-(setq org-capture-templates
-      `(("i" "inbox" entry (file "~/.org-gtd/plain-life.org")
-         "* INBOX %?\n  %U\n" :clock-resume t)
-	("t" "todo" entry (file "~/.org-gtd/plain-life.org")
-         "* TODO %?\n  %U\n%a\n" :clock-resume t)
-	("n" "next" entry (file "~/.org-gtd/plain-life.org")
-         "* NEXT %?\n  %U\n%a\n" :clock-resume t)))
+;;(setq org-capture-templates
+;;      `(("i" "inbox" entry (file "~/.org-gtd/plain-life.org")
+;;         "* INBOX %?\n  %U\n" :clock-resume t)
+;;	("t" "todo" entry (file "~/.org-gtd/plain-life.org")
+;;         "* TODO %?\n  %U\n%a\n" :clock-resume t)
+;;	("n" "next" entry (file "~/.org-gtd/plain-life.org")
+;;        "* NEXT %?\n  %U\n%a\n" :clock-resume t)))
 ;;; Refiling
 (setq org-refile-use-cache nil)
 (setq org-refile-use-outline-path t)

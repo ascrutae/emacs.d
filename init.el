@@ -23,7 +23,8 @@
 		     ivy
 		     counsel
 		     yaml-mode
-		     magit))
+		     magit
+		     pip-requirements))
 ;; DONOT generate back up files
 (setq make-backup-files nil)
 
@@ -39,15 +40,15 @@
 (require 'init-magit)
 (require 'init-projectile)
 (require 'init-yaml)
+(require 'init-python)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files (quote ("~/.org-gtd/plain-life.org")) t)
+ '(org-agenda-files '("~/.org-gtd/plain-life.org") t)
  '(package-selected-packages
-   (quote
-    (counsel-projectile projectile use-package spacemacs-theme pkg-info org magit helm exec-path-from-shell counsel base16-theme auto-package-update auto-complete))))
+   '(counsel-projectile projectile use-package spacemacs-theme pkg-info org magit helm exec-path-from-shell counsel base16-theme auto-package-update auto-complete)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
